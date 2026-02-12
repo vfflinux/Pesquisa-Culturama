@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets-formularios-seo-acessibilidade/culturama-favico.png">
+    <link rel="icon" href="imagens-pesquisa_culturama/culturama-favico.png">
     <link rel="stylesheet" href="style.css">
     <title>Pesquisa Culturama</title>
 </head>
 <body>
     <main>
           <header>
-        <img src="assets-formularios-seo-acessibilidade/logo-culturama.png" alt="">
+        <img src="imagens-pesquisa_culturama/logo-culturama.png" alt="">
         <h1>Pesquisa Online </h1>
     </header>
 
     <section>
         <form action="" method="get">
             <fieldset>
-                
+               
                 <legend>Dados pessoais</legend>
+
+                <div> 
 
                 <label for="name">Nome</label>
             <input id="name" type="text" name="userName" required>
@@ -42,11 +44,14 @@
 
             <label for="image">Upload de foto </label>
             <input id="image" type="file" accept="imame/*" name="userImage">
-            <br>    
+            <br> 
+            </div>   
             </fieldset>  
             
             <fieldset> 
                 <legend>Perfil</legend>
+
+                <div>
 
                 <p>Gênero:</p>
                 <input id="faminino" type="radio" name="userGender" value="Feminino" >
@@ -103,11 +108,13 @@
                  <label for="city">Cidade</label>
             <input id="city" type="text" name="userCity" required>
 
+                </div>
+
             </fieldset> 
 
             <fieldset>
                 <legend>Hábitos</legend>
-                
+                <div>
                 <input id="instagram" type="checkbox" name="social"
                 value="instagram">
                 <label for="instagram">Instagram </label>
@@ -136,11 +143,14 @@
                 <label for="favoriteColor">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
 
+                </div>
 
             </fieldset>
 
             <fieldset>
                 <legend>Opinião</legend>
+
+                <div>
 
                 <p>O que você achou do nosso atendimento?
                 </p>
@@ -163,19 +173,25 @@
                 <br>
                 <textarea id="comment" type="text" name="userComent" style="width: 400px; height: 200px;"></textarea>
 
+                </div>
+                
             </fieldset>
 
 
             <fieldset>
+                <div>
+
                 <input type="checkbox" name="userLgpd" id="userLpgpdTerm" value="accepted">
                 <label for="userLpgpdTerm">Eu aceito participar da pesquisa.</label><br>
 
                 <input type="checkbox" name="userLgpd" id="userLpgpdTerm" value="accepted" required>
                 <label for="userLpgpdTerm">Desejo receber os resultados por email.</label><br>
+
+                </div>
             </fieldset>
 
 
-            <button type="submit">Enviar</button> 
+            <button style="box-shadow: inset 0 3px 5px 1px rgba(0, 0, 0, 0.5) ;" type="submit">Enviar</button> 
 
         </form>
     </section>
