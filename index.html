@@ -10,12 +10,12 @@
 <body>
     <main>
           <header>
-        <img src="imagens-pesquisa_culturama/logo-culturama.png" alt="">
-        <h1>Pesquisa Online </h1>
+        <img style="width: 100px;" src="imagens-pesquisa_culturama/logo-culturama.png" alt="">
+        <h1>Pesquisa de Opinião </h1>
     </header>
 
     <section>
-        <form action="" method="get">
+        <form action="sucesso.html" method="get">
             <fieldset>
                
                 <legend>Dados pessoais</legend>
@@ -31,15 +31,15 @@
             <br>
 
             <label for="birthdate">Data de nacimento</label>
-            <input id="birthdate" type="date" name="userbirthdate">
+            <input id="birthdate" type="date" name="userbirthdate" required>
             <br>
 
             <label for="email">email</label>
-            <input id="email" type="email" name="userEmail">
+            <input id="email" type="email" name="userEmail" required>
             <br>
 
             <label for="phoneNumber">Numero de telefone</label>
-            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="{0-9}{11}" placeholder="DDD + numero sem espaço ou hífen">
+            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="{0-9}{11}" placeholder="DDD + numero sem espaço ou hífen" required>
             <br>
 
             <label for="image">Upload de foto </label>
@@ -191,7 +191,11 @@
             </fieldset>
 
 
-            <button style="box-shadow: inset 0 3px 5px 1px rgba(0, 0, 0, 0.5) ;" type="submit">Enviar</button> 
+            <button type="submit">Enviar</button> 
+
+
+            <button  type="reset">Limpar</button>
+
 
         </form>
     </section>
