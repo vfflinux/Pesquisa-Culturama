@@ -39,7 +39,8 @@
             <br>
 
             <label for="phoneNumber">Numero de telefone</label>
-            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="{0-9}{11}" placeholder="DDD + numero sem espaço ou hífen" required>
+            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="{0-9}{11}" placeholder="DDD + numero sem espaço ou hífen" aria-describedby="phoneHelp" required>
+            <smal id="phoneHelp" >Preencha com 11 dígitos no formato: DDD + numero sem espaço ou hífen.</smal>
             <br>
 
             <label for="image">Upload de foto </label>
@@ -184,8 +185,8 @@
                 <input type="checkbox" name="userLgpd" id="userLpgpdTerm" value="accepted">
                 <label for="userLpgpdTerm">Eu aceito participar da pesquisa.</label><br>
 
-                <input type="checkbox" name="userLgpd" id="userLpgpdTerm" value="accepted" required>
-                <label for="userLpgpdTerm">Desejo receber os resultados por email.</label><br>
+                <input type="checkbox" name="userLgpd" id="userLpgpdTermo" value="accepted" required>
+                <label for="userLpgpdTermo">Desejo receber os resultados por email.</label><br>
 
                 </div>
             </fieldset>
